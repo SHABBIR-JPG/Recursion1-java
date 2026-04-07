@@ -2,6 +2,7 @@ package shabbir.com;
 
 public class Nto1 {
     static void main(String[] args) {
+       fun(5);
         funRev(5);
 
     }
@@ -18,6 +19,6 @@ public class Nto1 {
         }
 
         funRev(n-1);
-        System.out.print(n);
+        System.out.println(n);
     }
 }
