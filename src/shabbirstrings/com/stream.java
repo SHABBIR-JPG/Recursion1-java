@@ -2,21 +2,20 @@ package shabbirstrings.com;
 
 public class stream {
     static void main(String[] args) {
-        skip("","baccad");
+        System.out.println(skip("baccad"));
 
     }
-    static void skip(String p, String up){
+    static String skip( String up){
         if (up.isEmpty()){
-            System.out.println(p);
-            return;
+            return "";
         }
 
         char ch = up.charAt(0);
 
         if (ch == 'a'){
-            skip(p,up.substring(1));
+           return skip(up.substring(1));
         }else {
-            skip(p+ch,up.substring(1));
+            return ch+skip(up.substring(1));
         }
     }
 }
