@@ -1,4 +1,4 @@
-package shabbipatterns.com;
+package shabbirpatterns.com;
 
 import java.util.Arrays;
 

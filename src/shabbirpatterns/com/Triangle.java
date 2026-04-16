@@ -1,4 +1,4 @@
-package shabbipatterns.com;
+package shabbirpatterns.com;
 
 public class Triangle {
     static void main(String[] args) {

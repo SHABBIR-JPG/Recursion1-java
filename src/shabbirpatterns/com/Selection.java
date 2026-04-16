@@ -1,10 +1,10 @@
-package shabbipatterns.com;
+package shabbirpatterns.com;
 
 import java.util.Arrays;
 
 public class Selection {
     static void main(String[] args) {
-        int[] arr={8,3,4,1};
+        int[] arr={9,4,3,5};
         selection(arr,arr.length,0,0);
         System.out.println(Arrays.toString(arr));
     }
@@ -19,9 +19,12 @@ public class Selection {
                 selection(arr,r,c+1,max);
             }
         }else {
+           // System.out.println("swapping"+arr[max]+"with"+arr[r-1]);
             int temp=arr[max];
             arr[max]=arr[r-1];
             arr[r-1]=temp;
+//            System.out.println("swapping"+arr[max]+"with"+arr[r-1]);
+            selection(arr,r-1,0,0);
         }
     }
 }
