@@ -1,8 +1,11 @@
 package shabbirstrings.com;
 
+import java.util.ArrayList;
+
 public class Permutations {
     static void main(String[] args) {
-        permutation("", "abc");
+        //  permutation("", "abc");
+      //  ArrayList<String> ans = ("","abc");
 
     }
     static void permutation(String p, String up){
